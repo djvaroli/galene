@@ -2,7 +2,11 @@
 .env
 .env.*
 !.env.example
-/.agents/
+/.agents/*
+!/.agents/skills/
+/.agents/skills/*
+!/.agents/skills/galene-handoff/
+!/.agents/skills/galene-resume/
 /.codex/
 /.aws/
 /secrets/
@@ -10,6 +14,8 @@
 *service-account*.json
 
 # Persistent and temporary application data
+/.HANDOFF
+/.handoff/
 /data/
 *.sqlite3
 *.sqlite3-wal

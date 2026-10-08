@@ -1,0 +1,4 @@
+interface:
+  display_name: "Galene Resume"
+  short_description: "Resume Galene work from a verified local checkpoint"
+  default_prompt: "Use $galene-resume to restore the Galene checkpoint and continue the authorized next increment."
