@@ -8,6 +8,9 @@ Design date: 2026-10-08. This is a proposed implementation baseline. Decisions m
 | --- | --- |
 | [Product and user experience](01-product.md) | First usable release, screens, useful follow-up features, acceptance criteria |
 | [Decisions and assumptions](02-decisions.md) | Stack choices, alternatives, owner questions, scope boundaries |
+| [Architecture](03-architecture.md) | Services, dependency direction, interfaces, background work |
+| [Data and API contracts](04-data-and-api.md) | Inventory semantics, persistence, HTTP operations, review transactions |
+| [AI capture and assistance](05-ai.md) | Image handling, uncertain observations, recommendations, limits and evaluation |
 
 Read product and decisions first. Additional design layers add architecture, AI behavior, moving estimates, security and the delivery plan.
 
