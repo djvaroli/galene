@@ -1,0 +1,34 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+/.agents/
+/.codex/
+/.aws/
+/secrets/
+/certs/
+*service-account*.json
+
+# Persistent and temporary application data
+/data/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.log
+
+# Python and frontend build output
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+# Editor and operating system files
+.DS_Store
+*.swp
