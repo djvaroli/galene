@@ -1,0 +1,4 @@
+interface:
+  display_name: "Galene Handoff"
+  short_description: "Save Galene session context for a later session"
+  default_prompt: "Use $galene-handoff to save the current Galene workstream for a fresh session."
