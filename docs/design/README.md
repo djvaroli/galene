@@ -4,6 +4,8 @@ Galene is a private web app for one person to catalog belongings and prepare for
 
 Design date: 2026-10-08. This is a proposed implementation baseline. Decisions made by the owner and defaults selected by the engineer are distinguished in the decision record.
 
+Implementation status (2026-10-10): the foundation increment now provides local service shells, migration plumbing, health checks, and disposable Docker tests. See the [development guide](../engineering/development.md) for commands that actually exist. The feature journey below remains the target; authentication and inventory are next.
+
 | Document | What it settles |
 | --- | --- |
 | [Product and user experience](01-product.md) | First usable release, screens, useful follow-up features, acceptance criteria |

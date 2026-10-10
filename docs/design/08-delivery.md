@@ -2,6 +2,8 @@
 
 Build in small vertical steps that leave a useful, testable application after each merge. The first usable release includes reviewed capture and moving assistance; video and backups follow later. This session delivers design documents only.
 
+Implementation update (2026-10-10): the foundation described in row 1 is implemented. [Current commands and test scope](../engineering/development.md) distinguish available checks from the planned feature tests below. Generated-client drift checks and browser/interaction tests are deferred to private inventory, where a transport client and interactive flows first exist.
+
 ## Minimum test suite
 
 | Layer | Tests worth keeping |
