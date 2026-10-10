@@ -1,0 +1,28 @@
+# Requires Docker Compose >=2.24.4 for !override. No host data or published ports.
+services:
+  migrate:
+    user: "1000:1000"
+    environment: {GALENE_APP_ENV: test}
+    volumes: !override [test-db:/data/db, test-media:/data/media]
+  api:
+    user: "1000:1000"
+    environment: {GALENE_APP_ENV: test}
+    volumes: !override [test-db:/data/db, test-media:/data/media]
+  worker:
+    user: "1000:1000"
+    environment: {GALENE_APP_ENV: test}
+    volumes: !override [test-db:/data/db, test-media:/data/media]
+  nginx:
+    ports: !reset []
+  integration:
+    profiles: [test]
+    build: {context: ./backend, target: check}
+    environment:
+      GALENE_APP_ENV: test
+      GALENE_STORAGE_DIR: /data
+    volumes: [test-db:/data/db, test-media:/data/media]
+    command: [pytest, -q, tests/integration]
+
+volumes:
+  test-db:
+  test-media:

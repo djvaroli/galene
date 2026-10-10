@@ -1,0 +1,10 @@
+*
+!pyproject.toml
+!uv.lock
+!app/
+!app/**
+!migrations/
+!migrations/**
+!tests/
+!tests/**
+**/__pycache__
